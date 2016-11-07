@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div style="height: 100px;width: 100px;background: red;">
+			<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('div').delay(3000).animate({opacity:0.2},1000,'linear',function(){
+				$('div').animate({opacity:1},1000)
+			})
+			$(".banner").delay(3500).animate({opacity:0.5},500,'')
+						timer = setInterval(function(){
+							$(".banner").stop(true);
+							$(".banner").animate({opacity:1},500).delay(3000)
+					  	$(".banner").animate({opacity:0.5},500,'')
+						$(".banner").css("background","url("+data[i].img+")").css("background-position","center");
+						
+							i++;
+						if(i == 5){
+							i = 0;
+						}
+						},4000)
+		</script>
+	</body>
+</html>

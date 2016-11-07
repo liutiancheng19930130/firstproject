@@ -1,0 +1,222 @@
+.selectform{
+	margin-top:30px;
+
+}
+.selectform .center{
+	padding-bottom:30px;
+	background: #E6E6E6;
+}
+.selectform .attrbute{
+	background-color: #fff;
+    font-family: 'Microsoft Yahei';
+    font-size: 12px;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-align: left;
+    font-style: normal;
+}
+.attrbute-1{
+	border-bottom: 1px dotted #c8c8c8;
+    position: relative;
+    overflow: hidden;
+}
+.single-attr{
+	margin: 8px 0 4px 100px;
+    width: 1078px;
+    overflow: hidden;
+    background-color: #fff;
+    position: relative;
+}
+.single-attr li{
+	display: inline-block;
+    padding: 3px 20px 3px 6px;
+    line-height: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #333;
+    position: relative;
+	float: left;
+    display: inline-block;
+    width: 127px;
+    padding-bottom: 2px;
+}
+.attr-span{
+	float: left;
+    width: 100px;
+    padding-top: 12px;
+    margin-bottom: -1000px;
+    padding-bottom: 1000px;
+    text-align: center;
+    background-color: #fbfbfb;
+    color: #333;
+    font-size: 12px;
+    font-weight: normal;
+}
+.attr-all{
+	padding: 3px 8px 4px;
+	display: block;
+	background-color: #d70057;
+    color: #fff;
+	float: left;
+    margin: 0 20px;
+}
+.price1{
+       position: absolute;
+    top: 0;
+    left: 10px;
+    line-height: 26px;
+    color: #999;
+
+}
+.price2{
+	
+	float: left;
+    display: inline-block;
+    vertical-align: middle;
+    width: 68px;
+    height: 28px;
+    line-height: 28px;
+    margin: 0 10px;
+    text-align: center;
+    color: #656668;
+    background-color: #ffe1ed;
+    cursor: pointer;
+}
+.pri-inp{
+	margin: 0 2px 0 22px;
+    width: 44px;
+    line-height: 24px \9;
+    height: 24px;
+    border: 0;
+    outline: none;
+}
+.pricediv{
+	float: left;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+    width: 68px;
+    height: 26px;
+    border: 1px solid #ececec;
+    overflow: hidden;
+    position: relative;
+}
+.show-hide{
+	
+	text-align: center;
+    border-top: 6px solid #e9e9e9;
+    background-color: #f9f9f9;
+}
+.show-hide a{
+	    display: block;
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    padding-bottom: 4px;
+    margin: 0 auto;
+    background-color: #e9e9e9;
+    color: #666;
+    text-align: center;
+    cursor: pointer;
+}
+.hide{
+	display: none;
+}
+.attrbute-11 {
+	overflow: hidden;
+}
+.good-select{
+	height: 38px;
+    border: 1px solid #d9d9d9;
+    background-color: #fbfbfb;
+}
+.good-selectdiv{
+	    float: left;
+    display: inline;
+    padding: 0 27px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    color: #666;
+    border-right: 1px solid #d9d9d9;
+    position: relative;
+    font-family: 'Microsoft Yahei';
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.good-selectdivb{
+	background: white;
+	float: left;
+    display: inline;
+    padding: 0 27px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border-right: 1px solid #d9d9d9;
+    position: relative;
+    font-family: 'Microsoft Yahei';
+    font-size: 12px;
+    cursor: pointer;
+	border-bottom: 1px solid white;
+	color: #D70057;
+}
+.singlegood{
+	float: left;
+    display: inline;
+    width: 270px;
+    height: 394px;
+    overflow: hidden;
+    background-color: #fff;
+    position: relative;
+    margin-left: 24px;
+}
+.singlegooda .img1{
+	width: 270px;
+    margin: 0 0 16px 0;
+}
+.singlegooda .img2{
+	    height: 50px;
+    margin-bottom: 10px;
+    display: block;
+    width: auto;
+	    margin-left: 99px;
+}
+.singlegooda p{
+	 font-family: 'Microsoft Yahei';
+    font-size: 12px;
+	color: #333;
+	display: block;
+    width: 260px;
+    margin: 0 auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
+    line-height: 20px;
+}
+.singlegoods1{
+	  font-family: 'Microsoft Yahei';
+    font-size: 12px;
+	    font-style: normal;
+	margin-top: 6px;
+    text-align: center;
+    display: block;
+    color: #d70057;
+}
+.singlegoods1-1{
+	    font-family: Verdana;
+    color: #d70057;
+    font-size: 18px;
+    font-weight: normal;
+    margin-left: 3px;
+}
+.singlegoods1-2{
+	    font-style: normal;
+	    color: #999;
+    margin-left: 10px;
+	    text-decoration: line-through;
+}
