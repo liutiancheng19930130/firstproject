@@ -23,6 +23,17 @@
 							i = 0;
 						}
 						},4000)
+						else{
+					var str = $.cookie('good');
+					var arr = eval(str);
+					for(var attr in arr ){
+						if(arr[attr].id == 1){
+							arr[attr].num = arr[attr].num + $('#ulsinp').val();
+							var newgoodnum = JSON.stringify(arr);
+							$.cookie('good',newgoodnum);
+						}
+					}
+				}
 		</script>
 	</body>
 </html>

@@ -1,0 +1,392 @@
+.a img{width: 100%;height: 100%;
+
+	}
+
+.a{
+	width: 452px;
+		overflow: hidden;
+	position: relative;
+	float: left;
+}
+.c{
+	width: 225.5px;
+	height: 225.5px;
+	background: white;
+	opacity: 0.6;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	display: none;
+	border: 1px solid #b6b6b6;
+}
+.b{border: 1px solid #b6b6b6;
+	width: 450px;
+	height: 450px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	}
+.d{
+	width: 600px;
+	height: 450px;
+	 overflow: hidden; 
+	position: absolute;
+	left: 450px;
+	top: 0px;
+	display:none;
+	border: 2px solid #b6b6b6;
+	z-index: 111;
+}
+.e{
+	position: absolute;
+	width:1200px;
+	height: 900px; 
+	left: 0;
+	z-index: -10;
+
+}
+.pic-mini{
+	width: 60px;height: 60px;
+	border: 1px solid #b6b6b6;
+	float: left;
+}
+.pic{
+	margin-bottom: 60px;
+}
+.priceandbuy{
+	position: relative;
+	float: left;
+    margin-left: 29px;
+    width: 719px;
+    font-family: 'Microsoft Yahei';
+    font-size: 12px;
+}
+.priceandbuy h3{
+	font-size: 16px;
+    margin-top: 6px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Microsoft Yahei';
+    position: relative;
+}
+.pricediv-1{
+	float: left;
+    color: #999;
+    margin-top: 14px;
+    display: inline-block;
+    width: 719px;
+    background: #f6f6f6;
+    position: relative;
+    
+}
+.pricediv-1-1{
+	overflow: hidden;
+	 padding: 7px 0 12px 0;
+    border-bottom: 1px solid #e9e9e9;
+}
+.pricediv-1-1-1{
+	color: #999;
+    padding: 0 8px 0 0;
+    float: left;
+}
+.pricediv-sp1{
+	display: inline-block;
+    padding-left: 20px;
+    width: 56px;
+    color: #535353;
+}
+.pricediv-sp2{
+	position: relative;
+    top: 2px;
+    font-size: 24px;
+    font-family: 'Microsoft Yahei';
+    color: #D70057;
+}
+#price-span{
+	font-size: 36px;
+    padding-left: 6px;
+}
+.pricediv-sp3{
+	text-decoration: line-through;
+    margin: 0 10px;
+    color: #999;
+    font-size: 14px;
+}
+.pricediv-1-1-2{
+	height: 20px;
+    float: left;
+    color: #fff;
+    margin-top: 19px;
+    border-radius: 24px;
+    line-height: 20px;
+    padding: 0 12px;
+    background: #f66b8c;
+}
+.event{
+	overflow: hidden;
+	padding-top: 10px;
+    padding-bottom: 11px;
+}
+.event-1{
+	padding-top: 0px;
+	float: left;
+    display: inline;
+    padding-left: 20px;
+    width: 56px;
+    text-align: left;
+    line-height: 20px;
+    color: #535353;
+}
+.event-1{
+	float: left;
+}
+.event-sp{
+	 display: block;
+    float: left;
+    background: #d70057;
+    color: #fff;
+    padding: 0 12px;
+    text-align: center;
+    height: 22px;
+    line-height: 22px;
+   
+}
+.event-sp2{
+	 float: left;
+    padding-left: 10px;
+    color: #666;
+    font-family: 'SimSun';
+    line-height: 20px;
+}
+.color{
+	padding-top: 16px;
+    width: 719px;
+    overflow: hidden;
+    background: white;
+}
+.color-1{
+	color: #535353;
+    font-size: 12px;
+    float: left;
+    padding-top: 2px;
+    padding-left: 20px;
+    width: 56px;
+}
+.color-2{
+	float: left;
+    width: 643px;
+}
+.color-2 img{
+	display: block;
+    width: 59px;
+    height: 59px;
+    float: left;
+    border: 1px solid #d70057;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.size{
+	line-height: 18px;
+    width: 100%;
+    padding-top: 0;
+    padding-left: 20px;
+    color: #535353;
+    font-size: 12px;
+    float: left;
+}
+.size a{
+	font-family: 'SimSun';
+    margin-left: 26px;
+    color: #d70057;
+    text-decoration: none;
+}
+.ulq{
+	overflow: hidden;
+	margin-left: 76px;
+    padding-top: 10px;
+    width: 640px
+}
+.ulq li{
+	float: left;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    white-space: nowrap;
+}
+.ulq-div{
+	background: white;
+}
+.ulq-a{
+	display: block;
+    border: 1px solid #b5b5b5;
+    position: relative;
+    background: white;
+    cursor: pointer;
+}
+.ulq-sp{
+    padding: 0 15px;
+    display: block;
+    color: #333;
+    line-height: 24px;
+    font-size: 12px;
+    font-family: 'Microsoft Yahei';
+}
+.scount{
+	color: #535353;
+    font-size: 12px;
+    float: left;
+	width: 56px;
+    padding-top: 5px;   
+    line-height: 18px;
+    padding-left: 20px;
+}
+#ulsa{
+	border: 1px solid #b5b5b5;
+    border-right: 0;
+    display: block;
+    overflow: hidden;
+	width: 28px;
+    height: 28px;
+	cursor: pointer;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #8c8b8b;
+    background: #f9f9f9;
+    line-height: 30px;
+}
+#ulsinp{
+	    text-align: center;
+    line-height: 26px;
+        width: 30px;
+            border: 0;
+    height: 28px;
+    overflow: hidden;
+    border-top: 1px solid #b5b5b5;
+    border-bottom: 1px solid #b5b5b5;
+}
+#ulsa1{
+	border: 1px solid #b5b5b5;
+    border-left: 0;
+    display: block;
+    overflow: hidden;
+	width: 28px;
+    height: 28px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #8c8b8b;
+    background: #f9f9f9;
+    line-height: 30px;
+}
+.uls{
+	overflow: hidden;
+	float:left;
+}
+.uls li{
+	float: left;
+}
+.shopcarbutton{
+	overflow: hidden;
+	margin: 40px 0 37px 76px;
+    zoom: 1;
+}
+#shopcarbtn{
+	float: left;
+    display: inline;
+    height: 50px;
+    width: 250px;
+}
+#carbtn{
+	height: 50px;
+    width: 250px;
+    padding-left: 32px;
+    border: 0;
+    cursor: pointer;
+    background: #d70057 url(http://0.js.ws.okbuycdn.com/resources/images/v6/product/detail/cartbtnbg.png) 59px 17px no-repeat;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Microsoft Yahei';
+    font-size: 20px;
+    border-radius: 1px;
+    z-index: 18;
+
+}
+.shopcarbtnsp{
+	height: 50px;
+    width: 250px;
+    border: 0;
+    cursor: pointer;
+    background: green;
+    opacity: 0.6;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Microsoft Yahei';
+    font-size: 16px;
+    border-radius: 1px;
+    z-index: 20;
+    display: none;
+    position: absolute;
+    left: 76px;
+    top: 376px;
+}
+.OB_clearB{
+	clear: both;
+}
+.okbuy{
+	    padding: 10px 0 10px 76px;
+    width: 630px;
+    height: 32px;
+    border-color: #dcdcdc;
+    border-width: 1px 0;
+    border-style: dashed;
+    background: url(http://0.js.ws.okbuycdn.com/resources/images/v6/product/detail/okservice.png) 72px 6px no-repeat;
+}
+.shopintro{
+	width: 1198px;
+    height: 48px;
+    border: 1px solid #dfdfdf;
+    background-color: #fbfbfb;
+	position: static;
+    top: 882px;
+    z-index: 200;
+}
+.ulw{
+	position: relative;
+}
+.ulw li{
+	float: left;
+    height: 48px;
+}
+.ulw a{
+	display: block;
+    width: 140px;
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+    border-right: 1px solid #dfdfdf;
+    color: #333;
+    font-family: 'Microsoft Yahei';
+    font-size: 14px;
+}
+.selected{
+	display: block;
+    width: 140px;
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+    border-right: 1px solid #dfdfdf;
+    border-bottom: 1px solid #D70057;
+    font-family: 'Microsoft Yahei';
+    font-size: 14px;
+    background: white;
+    color: #D70057;
+}

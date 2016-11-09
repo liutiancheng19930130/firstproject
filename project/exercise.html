@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		.a div{width:100px;height: 100px;}
+		.b{opacity: 0.5;display: block;}
+		.c{display: none;}
+		</style>
+		<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			$(function(){
+				var num = 1;
+				setInterval(function(){
+					$('.a').find('div').attr('class','c')
+					$('.a').find('div').eq(num).attr('class','b').animate({opacity:1},500).delay(1000).animate({opacity:0.5},500)
+					num ++;
+					if(num == 4){
+						num = 0;
+					}
+				},2000)
+			
+			})
+		</script>
+	<div class="a" style="width: 100px;height: 100px;overflow: hidden;">
+	<div style="background: red;"></div>
+	<div style="background: blue;"></div>
+	<div style="background: deeppink;"></div>
+	<div style="background:black;"></div>
+	</div>
+	<div class="qqq" style="position:absolute;top:0;left:0;background: red;height: 100px;width: 100px;"></div>
+	<script type="text/javascript">
+		$('.qqq').animate({top:'500px',left:'500px',opacity:0},2000)
+	</script>
+	</body>
+</html>
