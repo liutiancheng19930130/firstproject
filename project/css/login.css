@@ -1,0 +1,264 @@
+.login-top{
+	width: 990px;
+    border-bottom: 2px solid #dc5751;
+    height: 65px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.login-top img{
+	float: left;
+}
+.loginandregister{
+	float: right;
+    margin: 35px 10px 0 0;
+}
+.loginandregister a{
+	font-family: 'Microsoft Yahei';
+    font-size: 12px;
+    color: #666;
+}
+.a1qq{
+	    width: 487px;
+    height: 588px;
+    display: block;
+    float: left;
+}
+.login-mid{
+	width: 990px;
+	margin: 0 auto;
+}
+.loginform{
+	margin: 70px 0 0 30px;
+	float: left;
+    display: inline;
+    padding-bottom: 80px;
+ 
+}
+.username{
+	position: relative;
+    width: 410px;
+    overflow: hidden;
+    height: 40px;
+}
+.mobilenum{
+	    float: left;
+    line-height: 38px;
+    font-family: 'SimSun';
+    font-size: 14px;
+    color: #636363;
+}
+.inputname{
+	    background: 0;
+    border: 1px solid #ddd;
+    width: 258px;
+    height: 38px;
+    border-radius: 4px;
+    padding: 0;
+    float: left;
+    position: relative;
+     border-color: #949494;
+}
+.inpname{
+	width: 250px;
+    height: 30px;
+    padding-left: 5px;
+    font-size: 12px;
+    position: absolute;
+    z-index: 1;
+    line-height: 30px;
+    margin: 2px;
+    border: 0;
+    background: #fff;
+    padding: 3px 1px;
+	text-shadow: none;
+        outline:none; 
+}
+.right1{
+	float: left;
+    padding-left: 10px;
+    display: none;
+}
+.right2{
+	float: left;
+    padding-left: 10px;
+    display: none;
+}
+.right3{
+	float: left;
+    padding-left: 10px;
+    display: none;
+}
+.alert1{
+	    height: 30px;
+    line-height: 24px;
+    color: #949494;
+    padding-left: 56px;
+    font-size: 12px;
+}
+.password{
+	    background: 0;
+    border: 1px solid #949494;
+    width: 258px;
+    height: 38px;
+    border-radius: 4px;
+    padding: 0;
+    float: left;
+    position: relative;
+}
+input{
+	width: 250px;
+    height: 30px;
+    padding-left: 5px;
+    font-size: 12px;
+    position: absolute;
+    z-index: 1;
+    line-height: 30px;
+    margin: 2px;
+    border: 0;
+    background: #fff;
+    padding: 3px 1px;
+	text-shadow: none;
+        outline:none; 
+}
+.alert2{
+	    height: 30px;
+    line-height: 24px;
+    color: #949494;
+    padding-left: 56px;
+    font-size: 12px;
+}
+.alert3{
+	    height: 30px;
+    line-height: 24px;
+    color: #949494;
+    padding-left: 56px;
+    font-size: 12px;
+}
+.check{
+	    float: left;
+    margin: 5px 0 0 10px;
+}
+.check p{
+	    line-height: 12px;
+    font-size: 12px;
+    margin: 0 0 6px 0;
+    color: #949494;
+}
+.level1{
+	    float: left;
+    width: 40px;
+    height: 14px;
+    display: block;
+    background: #d4d4d2;
+    color: #fff;
+    font-size: 12px;
+    margin-right: 2px;
+    text-align: center;
+}
+.level2{
+	    float: left;
+    width: 40px;
+    height: 14px;
+    display: block;
+    background: #d4d4d2;
+    color: #fff;
+    font-size: 12px;
+    margin-right: 2px;
+    text-align: center;
+}
+.level3{
+	float: left;
+    width: 40px;
+    height: 14px;
+    display: block;
+    background: #d4d4d2;
+    color: #fff;
+    font-size: 12px;
+    margin-right: 2px;
+    text-align: center;
+}
+.OB_clearB{
+	clear: both;
+}
+.checknum{
+	position: relative;
+    width: 400px;
+    overflow: hidden;
+    height: 40px;
+    
+}
+.checknum p{
+	font-family: 'Microsoft Yahei';
+    font-size: 12px;
+    width: 100px;
+    height: 40px;
+    float: left;
+  text-align: center;
+  margin-top:20px ;
+    cursor: pointer;
+}
+.inputchecknum{
+	 background: 0;
+    border: 1px solid #ddd;
+    width: 90px;
+    height: 38px;
+    border-radius: 4px;
+    padding: 0;
+    float: left;
+    position: relative;
+     border-color: #949494;
+}
+.inpchecknum{
+	width: 80px;
+    height: 30px;
+    padding-left: 5px;
+    font-size: 12px;
+    position: absolute;
+    z-index: 1;
+    line-height: 30px;
+    margin: 2px;
+    border: 0;
+    background: #fff;
+    padding: 3px 1px;
+	text-shadow: none;
+        outline:none; 
+}
+.checknumber{
+	width: 80px;
+	height: 38px;
+	background: red;
+float: left;
+text-align: center;
+color: wheat;
+line-height: 38px;
+margin-left: 15px;
+ font-size: 23px;
+}
+.complete{
+	width: 200px;
+	height: 50px;
+	background: #D70057;
+	color: white;
+	display: block;
+	border-radius:10px ;
+	margin-top:00px;
+	margin-left: 50px;
+	font-family: 'Microsoft Yahei';
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+.complete1{
+		width: 200px;
+	height: 50px;
+	background: #008000;
+	color: white;
+	display: block;
+	border-radius:10px ;
+	margin-top:00px;
+	margin-left: 50px;
+	font-family: 'Microsoft Yahei';
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}

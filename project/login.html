@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/login.css" />
+		<link rel="stylesheet" href="css/allstyle.css" />
+		<script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body>
+		<div class="login-top">
+			<div>
+			<img src="http://0.js.ws.okbuycdn.com/resources/images/v6/login/miniheaderlogo.png" />
+			<div class="loginandregister">
+				<a href="login.html">注册</a>
+				<a href="login2.html">登录</a>
+			</div>
+			</div>
+		</div>
+		<div class="login-mid">
+				<a class="a1qq" href="index.html">
+					<img src="http://i.okaybuy.cn/images/multipic/new/201611/aa/aa9568e644dc261104109cbb5af44eae.jpg" />
+				</a>
+				<div class="loginform">
+					<div class="username">
+						<div class="mobilenum">手机号:</div>
+						<div class="inputname">
+							<input type="text" placeholder="请输入正确的手机号" class="inpname"/>
+						</div>
+						<div class="right1">
+							<img src="http://0.js.ws.okbuycdn.com/resources/images/v6/login/vcodeicon.png" />
+						</div>
+					</div>
+					<div class="alert1">请输入手机号</div>
+					<div class="mobilenum">密  码:</div>
+					<div class="password">
+						<input type="password" class="inppassword" placeholder="请输入密码"/>
+					</div>
+					<div class="right2">
+							<img src="http://0.js.ws.okbuycdn.com/resources/images/v6/login/vcodeicon.png" />
+						</div>
+						<div class="check">
+							<p>安全程度</p>
+							<span class="level1">低</span>
+							<span class="level2">中</span>
+							<span class="level3">高</span>
+						</div>
+						<div class="OB_clearB"></div>
+						<div class="alert2">请输入6-15位密码,由数字字母下划线组成</div>
+						<div class="checknum">
+							<div class="mobilenum">验证码:</div>
+							<div class="inputchecknum">
+							<input type="text" placeholder="请输入验证码" class="inpchecknum"/>
+						</div>
+						
+						<div class="checknumber">
+							
+						</div>
+						<p>点击更换验证码</p>
+						<div class="right3">
+							<img src="http://0.js.ws.okbuycdn.com/resources/images/v6/login/vcodeicon.png" />
+						</div>
+						<div class="OB_clearB"></div>
+						</div>
+							<div class="alert3">请输入验证码</div>
+						<a href="#" class="complete">注册</a>
+				</div>
+			</div>
+			<script type="text/javascript">
+			var R = false;
+			var S = false;
+			var T = false;
+			$('.inpname').on('blur',function(){
+				if($('.inpname').val() == ''){
+					$('.alert1').html('手机号不能为空').css('color','#dc5751')
+					$('.right1').hide()
+					$('.inputname').css('border','1px solid #d70057')
+				}else if(!(/^1[34578]\d{9}$/.test($('.inpname').val()))){
+						$('.alert1').html('请输入正确的手机号码').css('color','#dc5751')
+						$('.right1').hide()
+						$('.inputname').css('border','1px solid #d70057')
+						R = false;
+					}else{
+						$('.right1').show()
+						$('.alert1').html('')
+						$('.inputname').css('border','1px solid #949494')
+						R = true;
+					}
+					
+			})
+				$('.inppassword').on('blur',function(){
+					$('.level1').css('background','#d4d4d4');
+							$('.level2').css('background','#d4d4d4');
+							$('.level3').css('background','#d4d4d4');
+				 	if(!(/^[\w.]{6,15}$/.test($('.inppassword').val()))){
+				 		$('.alert2').css('color','#dc5751').html('请输入6-15位密码,由数字字母下划线组成')
+						$('.right2').hide()
+						$('.password').css('border','1px solid #d70057')
+						S = false;
+				 	}else{
+				 		$('.right2').show()
+						$('.alert2').html('')
+						$('.password').css('border','1px solid #949494')
+						S = true;
+				 	}
+				 	if((/^\d{6,15}$/.test($('.inppassword').val()))||$('.inppassword').val().length<8&&$('.inppassword').val().length>=6){
+							$('.level1').css('background','red');
+							$('.level2').css('background','#d4d4d4');
+							$('.level3').css('background','#d4d4d4');
+						}else if((/^\w{6,15}$/.test($('.inppassword').val()))&&$('.inppassword').val().length>=8&&$('.inppassword').val().length<=12){
+							$('.level1').css('background','red');
+							$('.level2').css('background','orange');
+							$('.level3').css('background','#d4d4d4');
+						}else if((/^\w{6,15}$/.test($('.inppassword').val()))&&$('.inppassword').val().length>12){
+							$('.level1').css('background','red');
+							$('.level2').css('background','orange');
+							$('.level3').css('background','green');
+						}
+						else{
+							$('.level1').css('background','#d4d4d4');
+							$('.level2').css('background','#d4d4d4');
+							$('.level3').css('background','#d4d4d4');
+						}
+				})
+				var str11 = '0123456789qwertyuiopasdfghjklzxcvbnm';
+				var arr11 =[];
+				
+				for(var i = 0;i < 4;i++){
+					var num = Math.floor(Math.random()*36);
+					arr11.push(str11[num]);
+				}
+				$('.checknumber').html(arr11.join(''));
+				$('.checknum').find('p').click(function(){
+					arr11=[]
+					for(var i = 0;i < 4;i++){
+					var num = Math.floor(Math.random()*36);
+					arr11.push(str11[num]);
+				}
+					
+					$('.checknumber').html(arr11.join(''));
+					
+				})
+				$('.inpchecknum').on('blur',function(){
+					if($('.inpchecknum').val() == $('.checknumber').html()){
+					T = true;
+					$('.alert3').html('').css('color','#949494');
+					$('.right3').show();
+				}else{
+					T = false;
+					$('.alert3').html('验证码输入错误!').css('color','#dc5751')
+					$('.right3').hide();
+				}
+				})
+				$('.complete').click(function(){
+					if(R&&S&&T){
+					alert('注册成功!')
+					if(!$.cookie('account')){
+					$.cookie('account','[{name:"'+$('.inpname').val()+'",password:"'+$('.inppassword').val()+'"}]',{expires: 7})
+					alert($.cookie('account'))
+					}else{
+					$.cookie('account','[{name:"'+$('.inpname').val()+'",password:"'+$('.inppassword').val()+'"}]',{expires: 7})
+					}
+					alert($.cookie('account'))
+					window.open('login2.html')
+				}
+//					switch(false){
+//						case R :alert('手机号格式不正确');break;
+//						case S :alert('密码格式不正确');break;
+//						case T :alert('验证码不正确');break;
+//					}
+				if(R == false){
+					alert('手机号格式不正确')
+				}
+				if(S == false){
+					alert('密码格式不正确')
+				}
+				if(T == false){
+					alert('验证码不正确')
+				}
+				})
+				
+			</script>
+	</body>
+</html>

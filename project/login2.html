@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/login.css" />
+		<link rel="stylesheet" href="css/allstyle.css" />
+		<script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="login-top">
+			<div>
+			<img src="http://0.js.ws.okbuycdn.com/resources/images/v6/login/miniheaderlogo.png" />
+			<div class="loginandregister">
+				<a href="login.html">注册</a>
+				<a href="login2.html">登录</a>
+			</div>
+			</div>
+		</div>
+		<div class="login-mid">
+				<a class="a1qq" href="index.html">
+					<img src="http://i.okaybuy.cn/images/multipic/new/201611/aa/aa9568e644dc261104109cbb5af44eae.jpg" />
+				</a>
+				</div>
+				<div class="loginform">
+					<div class="username">
+						<div class="mobilenum">手机号:</div>
+						<div class="inputname">
+							<input type="text" placeholder="请输入正确的手机号" class="inpname"/>
+						</div>
+					</div>
+					<div class="alert2"></div>
+					<div class="mobilenum">密  码:</div>
+					<div class="password">
+						<input type="password" class="inppassword" placeholder="请输入密码"/>
+					</div>
+						<div class="OB_clearB"></div>
+						<div class="alert2"></div>
+						<a href="#" class="complete1">登录</a>
+					</div>
+					<script type="text/javascript">
+					$('.complete1').click(function(){
+						if($.cookie('account')){
+							var str = $.cookie('account');
+							var arr = eval(str);
+							for(var i in arr){
+								if(arr[i].name == $('.inpname').val() && arr[i].password == $('.inppassword').val()){
+									alert('登陆成功');
+									window.open('index.html')
+								}
+							}
+						}else{
+							alert('该用户不存在!');
+						}
+					})
+						
+					</script>
+	</body>
+</html>

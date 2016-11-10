@@ -29,7 +29,7 @@ function time(data,obj){
 			success:function(data){
 				var html = '';
 				for(var i = 0;i < data.length;i++){
-					html +='<div class="singlegood"><a href="http://10.9.160.89/code/project/pagebuy.html" class="singlegooda"><img class="img1" src=' +data[i].img1+ '><img class="img2" src='+data[i].img2+'><p>'+data[i].intro+'</p><span class="singlegoods1">￥<span class="singlegoods1-1">'+data[i].pricenow+'</span><span class="singlegoods1-2">'+data[i].pricepre+'</span></span></a></div>'
+					html +='<div class="singlegood"><a href="pagebuy.html" class="singlegooda"><img class="img1" src=' +data[i].img1+ '><img class="img2" src='+data[i].img2+'><p>'+data[i].intro+'</p><span class="singlegoods1">￥<span class="singlegoods1-1">'+data[i].pricenow+'</span><span class="singlegoods1-2">'+data[i].pricepre+'</span></span></a></div>'
 				}
 				$('.goodmessage').html(html);
 			},
@@ -64,7 +64,7 @@ function time(data,obj){
 						for(var i = 0;i<data.length;i++){
 							var arr = eval(data[i].name);
 							for(var j = 0 ;j < arr.length;j++){
-							html += "<a class='hidemenu-4a' href='http://10.9.160.89/code/project/goods.html'>"+arr[j]+"</a>"
+							html += "<a class='hidemenu-4a' href='goods.html'>"+arr[j]+"</a>"
 							}
 							$('.hidemenu-4').eq(i).html(html);
 							html = '';
@@ -381,6 +381,8 @@ function time(data,obj){
 				$(this).parent('li').siblings('li').find('span').removeClass('a-sp')
 //			alert(Number($('.a-sp').html()))
 			})
-					
+				if($.cookie('account')){
+					$('.head-M-T-messagee').html('欢迎您:'+eval($.cookie('account'))[0].name).css('font-size','12px')
+				}
 				
 			})
